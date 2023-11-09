@@ -18,6 +18,21 @@ form,
   min-width: 280px;
 }
 
+.add-btn {
+  background-color: rgb(201, 162, 238) !important;
+  font-size: 1.1rem !important;
+  color: rgb(96, 31, 158) !important;
+  font-weight: 500 !important;
+}
+
+.add-btn:hover {
+  background-color: rgb(167, 126, 206) !important;
+}
+
+.icon {
+  margin-left: 10px;
+}
+
 .listElement:hover {
   background-color: #f5f5f5;
 }

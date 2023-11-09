@@ -23,7 +23,7 @@ export const TaskForm = () => {
 
   return (
     <div>
-      <h1 className="my-4">All Tasks</h1>
+      <h1 className="my-4">Task List</h1>
       <form onSubmit={onSubmitForm}>
         <div className="form-group d-flex justify-content-between">
           <input

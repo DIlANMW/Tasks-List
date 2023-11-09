@@ -1,6 +1,5 @@
 import React from "react";
-import { HiTrash } from "react-icons/hi";
-import { FiCheckSquare } from "react-icons/fi";
+import { FaCheck, FaTrash } from "react-icons/fa";
 import { GrPowerReset } from "react-icons/gr";
 import axios from "axios";
 
@@ -34,25 +33,25 @@ export const Task = ({ task }) => {
   return (
     <div
       key={task._id}
-      className="listElement border d-flex justify-content-between my-3 px-3 py-1 "
+      className="listElement border d-flex rounded-3 shadow-sm justify-content-between my-3 px-3 py-4 "
     >
       <p className="fs-5 m-0">
         {task.completed ? <s>{task.data}</s> : task.data}
       </p>
       <div>
         {!task.completed ? (
-          <FiCheckSquare
-            className="fs-5"
+          <FaCheck
+            className="fs-5 icon"
             onClick={() => completeTaskStatus(task._id)}
           />
         ) : (
           <GrPowerReset
-            className="fs-5"
+            className="fs-5 icon"
             onClick={() => completeTaskStatus(task._id)}
           />
         )}
 
-        <HiTrash className="fs-5" onClick={() => deleteTodo()} />
+        <FaTrash className="fs-5 icon" onClick={() => deleteTodo()} />
       </div>
     </div>
   );
