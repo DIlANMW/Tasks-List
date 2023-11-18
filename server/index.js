@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://tasks-list-green.vercel.app/",
+    origin: "https://tasks-list-4qr7k9a9f-dilanweerasinghe97-gmailcom.vercel.app/",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
   })
