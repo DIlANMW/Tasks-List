@@ -5,7 +5,14 @@ import router from "./routes/route.js";
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin:
+      "https://tasks-list-7htufwunh-dilanweerasinghe97-gmailcom.vercel.app",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    credentials: true,
+  })
+);
 app.use("/", router);
 
 const PORT = 8000;
