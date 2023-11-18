@@ -6,7 +6,7 @@ import router from "./routes/route.js";
 const app = express();
 app.use(express.json());
 app.use(cors());
-app.use("/", router);
+app.use("https://tasks-list-green.vercel.app/", router);
 
 const PORT = 8000;
 
