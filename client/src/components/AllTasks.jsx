@@ -4,7 +4,7 @@ import { Task } from "./Task";
 
 export const AllTasks = () => {
   const [allTasks, setAllTasks] = useState([]);
-  const API_URI = "http://localhost:8000";
+  const API_URI = "https://task-2jxb.onrender.com";
 
   // Get all tasks on page load
   useEffect(() => {
