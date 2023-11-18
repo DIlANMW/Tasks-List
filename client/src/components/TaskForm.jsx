@@ -4,7 +4,7 @@ import axios from "axios";
 export const TaskForm = () => {
   const [task, setTask] = useState("");
 
-  const API_URL = "http://localhost:8000";
+  const API_URL = "https://task-2jxb.onrender.com";
 
   // submit handler
   const onSubmitForm = async (e) => {
