@@ -4,7 +4,7 @@ import { GrPowerReset } from "react-icons/gr";
 import axios from "axios";
 
 export const Task = ({ task }) => {
-  const API_URI = "http://localhost:8000";
+  const API_URI = "https://task-2jxb.onrender.com";
 
   // Complete task status
   const completeTaskStatus = async (id) => {
